@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>jsontepad转到对话框</title>
+    <link rel="stylesheet" href="./goto.css">
+</head>
+<body>
+    <input type="button" id="popup" value="弹出对话框">
+    <hr>
+    <div id="main">
+    </div>
+</body>
+<script src="https://apps.bdimg.com/libs/jquery/2.1.4/jquery.min.js"></script>
+<script src="./goto.js"></script>
+<script>
+    $(function () {  
+           var $btnadd=$('#popup');
+           $btnadd.click(function(){
+                $dlgGoto.show({
+                    lineNum:4,
+                    totalLine:5,
+                    gotoHandler:function(lines){
+                        console.log('goto btn click! GOTO %s lines',lines);
+                    }
+                })
+           })
+        })
+</script>
+</html>

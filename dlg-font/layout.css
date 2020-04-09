@@ -1,0 +1,104 @@
+*{
+    padding:0;
+    margin: 0;
+}
+ul ,li{
+    list-style: none;
+}
+.notepad-dlg-font {
+    height: 100%;
+    left: 0;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 10;
+}
+  
+.notepad-dlg-font .dialogbox {
+    border: 1px solid #0f7fd6;
+    box-shadow: 10px 10px 10px #d6d6d6;
+    box-sizing: border-box;
+    cursor: default;
+    height: 498px;
+    margin: 0 auto;
+    position: relative;
+    top: 50px;
+    user-select: none;
+    width: 438px;
+}
+.notepad-dlg-font .notepad-dlg-titlebar {
+    background-color:white;
+    box-sizing: border-box;
+    font-size:1.3em;
+    height:30px;
+}
+.notepad-dlg-font .notepad-dlg-titlebar .title{
+    display:inline-block;
+    line-height: 30px;
+    margin-left:10px;
+}
+.notepad-dlg-font .notepad-dlg-titlebar .close-btn{
+    color: gray;
+    line-height: 30px;
+    position: absolute;
+    right: 0;
+    text-align: center;
+    width: 30px;
+}
+.notepad-dlg-font .notepad-dlg-titlebar .close-btn:hover{
+    background-color: red;
+    color: #fff;
+}
+.notepad-dlg-font .main{
+    height: 466px;
+    background-color: #ccc;
+}
+.notepad-dlg-main {
+    background-color: #f0f0f0;
+    box-sizing: border-box;
+    font-size: 1.1em;
+    padding: 12px;
+    position: relative;
+  }  
+.notepad-dlg-font .main .font-family,
+.notepad-dlg-font .main .font-style{
+    display: inline-block;
+    font-size: 0.8em;
+    margin-right: 16px;
+}
+.notepad-dlg-font .main .font-size{
+    display: inline-block;
+    font-size: 0.8em;
+}
+.notepad-dlg-font .main .sample{
+    border-color: white; 
+    display: inline-block;
+    height: 78px;
+    margin-left: 200px;
+    margin-top: 28px;
+    overflow: hidden;
+    width: 194px;
+}
+.notepad-dlg-font .main .script {
+    display: inline-block;
+    margin-left: 200px;
+    margin-top: 12px;
+}
+.notepad-dlg-font .main select {
+    height: 22px;
+    width: 214px;
+}
+.notepad-dlg-main .btn {
+    height: 28px;
+    width: 86px;
+}
+.notepad-dlg-font .main .btn-ok {
+    bottom: 10px;
+    position: absolute;
+    right: 110px;
+}
+.notepad-dlg-font .main .btn-cancel {
+    bottom: 10px;
+    position: absolute;
+    right: 16px;
+}

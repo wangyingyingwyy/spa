@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>字体对话框</title>
+    <link rel="stylesheet" href="./layout.css">
+    <link rel="stylesheet" href="../list/list.css">
+</head>
+<body>
+    <div class="test">
+        <input class="font" type="button" value="弹出对话框">
+    </div>
+    <!-- <div class="notepad-dlg-font">
+        <div class="dialogbox">
+            <div class="notepad-dlg-titlebar">
+                <p class="title">字体</p>
+                <span class="close-btn">✖</span>
+            </div>
+            <div class="main notepad-dlg-main">
+                <div class="font-family"><p>字体(F):</p></div>
+                <div class="font-style"><p>字形(Y):</p></div>
+                <div class="font-size"><p>大小(S):</p></div>
+                <fieldset class="sample">
+                    <legend>示例</legend>
+                    <p class="sample-txt">AaBbYyZz</p>
+                </fieldset>
+                <div class="script">
+                    <lable>
+                        脚本(R):<br>
+                        <select name="" id="">
+                            <option value="西欧语言">西欧语言</option>
+                            <option value="中文GB2312">中文GB2312</option>
+                        </select>
+                    </lable>
+                </div>
+                <input class="btn btn-ok" type="button" value="确定">
+                <input class="btn btn-cancel" type="button" value="取消">
+            </div>
+        </div>
+    </div> -->
+</body>
+<script src="https://apps.bdimg.com/libs/jquery/2.1.4/jquery.min.js"></script>
+<script src="./main.js"></script>
+<script src="../list/list.js"></script>
+<script>
+    $(function(){
+        $btnTest=$('.font');
+        $btnTest.click(function(){
+            $dlgFont.show({
+                okHandler:function(e){
+                    console.log(e);
+                }
+            })
+        })
+    })
+</script>
+</html>

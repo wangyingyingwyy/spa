@@ -1,0 +1,72 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+ul ,li{
+    list-style: none;
+}
+/* 整个菜单栏 */
+.notepad-menubar{
+    background-color: #fff;
+    left: 0;
+    position: fixed;
+    top: 0;
+    user-select: none;
+}
+/* 一级菜单 */
+.notepad-menubar .title {
+    border: 1px solid white;
+    box-sizing: border-box;
+    cursor: default;
+    display: inline-block;
+    font-size: 0.8em;
+    height: 20px;
+    line-height: 18px;
+    text-align: center;
+    width: 54px;
+}
+/* 鼠标滑上样式 */
+.notepad-menubar .title:hover {
+    box-sizing: border-box;
+    background-color: #cce8ff;
+    border: 1px solid #99d1ff;
+}
+/* 二级菜单  */
+.notepad-menubar .menus {
+    background-color: #f2f2f2;
+    box-shadow: 3px 3px 3px #a6a6a6;
+    display: inline-block;
+    font-size: 0.8em;
+    margin: 0;
+    padding: 2px;
+    position: absolute;
+    top: 20px;
+    width: 202px;
+}
+/* 二级菜单选项 */
+.notepad-menubar .menu-item {
+    display: block;
+    height: 22px;
+    line-height: 22px;
+    margin-left: 2px;
+    margin-right: 1px;
+    padding-left: 34px;
+    position: relative; 
+}
+/* 二级菜单选项划上样式 */
+.notepad-menubar .menu-item:hover {
+    background-color: #99d1ff;
+    height: 22px;
+}
+  
+.notepad-menubar .shortcut {
+    position: absolute;
+    right: 20px;
+}
+.notepad-menubar .menu-hr {
+    border: 1px solid #d7d7d7;
+    display: block;
+    height: 0;
+    margin: 4px;
+    margin-left: 34px;
+}
